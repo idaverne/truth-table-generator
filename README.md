@@ -1,4 +1,9 @@
 # truth-table-generator
+
+To view the generator visit http://www.idavernestanfield.com/multivalued-truth-table-generator/
+
+***Safari users*** The app is posted to idavernestanfield.com as an iFrame. Due to compatibility issues, Safari users may be unable to use the app in this form. As a workaround, Safari users can view at https://idaverne.github.io/truth-table-generator/
+
 The following truth-table generator allows you to compare how Classical, Lukasiewicz, Gödel, and Kleene logics compute propositional formulas. Simply enter a formula, choose a logic and view the resulting table. Some notes on form: 
 
 Any letter on the keyboard, excepting 'v' can be used as an operator. 'V' is reserved as the symbol for disjunction. 
