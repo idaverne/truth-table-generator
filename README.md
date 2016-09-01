@@ -25,6 +25,7 @@ Every formula and sub-formula must be bracketed by parentheses, such that there 
 Any symbol that is not a letter, a parentheses or an operator is disallowed. I.e. [~9 # p] is not a well-formed formula.
 
 Example well-formed formulas:
+
 'Jane will go to the circus, if and only if Marcus or Logan is on stage' becomes:
 (J % (M v L))
 
