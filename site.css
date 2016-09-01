@@ -5,7 +5,7 @@
 body{background-color: #000000;}
 .tterror{font-family: 'Abel', sans-serif;font-size: 20px;color: #ffffff;background-color: #000000;}
 .numrows{font-family: 'Abel', sans-serif;font-size: 20px;color: #ffffff;background-color: #000000;}
-
+.calc{font-family: 'Abel', sans-serif;font-size: 20px;color: #ffffff;background-color: #000000;}
 .ttform-input{min-height:45px; min-width: 100%;max-width: 100%;border: none;border-bottom: 2px solid #ffffff;outline: none;font-family: 'Abel', sans-serif;font-size: 26px;color: #ffffff;background-color: #000000;text-transform:uppercase;}
 
 .buttons{padding: 30px 1px 18px 1px;background-color: #000000;min-width: 100%;text-align: justify;}
