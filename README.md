@@ -6,7 +6,7 @@ To view the generator in all its glory, visit http://www.idavernestanfield.com/m
 
 The following truth-table generator allows you to compare how Classical, Lukasiewicz, Gödel, and Kleene logics compute propositional formulas. Simply enter a formula, choose a logic and view the resulting table. Some notes on form: 
 
-Any letter on the keyboard, excepting 'v' can be used as an operator. 'V' is reserved as the symbol for disjunction. 
+Any letter on the keyboard, excepting 'v' can be used as a variable. 'V' is reserved as the symbol for disjunction. 
 
 Keyboard symbols for operators:
 v  :  Disjunction/Or/⋁                   &  :  Conjunction/and/⋀
