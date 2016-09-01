@@ -9,9 +9,16 @@ This truth-table generator allows you to compare how Classical, Lukasiewicz, Gö
 Any letter on the keyboard, excepting 'v' can be used as a variable. 'V' is reserved as the symbol for disjunction. 
 
 Keyboard symbols for operators:
-v  :  Disjunction/Or/⋁                   &  :  Conjunction/and/⋀
->  :  Conditional/If-then/ →         %  :  Bi-conditional/if-and-only-if/↔
-~  :  Negation/Not/¬
+
+'v'  :  Disjunction/Or/⋁    
+
+'&'  :  Conjunction/and/⋀
+
+'>'  :  Conditional/If-then/ →
+
+'%'  : Bi-conditional/if-and-only-if/↔
+
+'~'  :  Negation/Not/¬
 
 Every formula and sub-formula must be bracketed by parentheses, such that there are twice as many parentheses as binary operators.  'v' , '>' , '&' , '%' are binary operators. '~' is a unary operator, so the parentheses rule does not apply to it. I.e. ( F v B)  ;  ((D & ~ D) % ~(C v C))  ; but NOT! ((F v B)) ; and NOT ! (~C)
 
