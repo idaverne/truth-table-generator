@@ -4,7 +4,7 @@ To view the generator in all its glory, visit http://www.idavernestanfield.com/m
 
 ***Safari users*** The app is posted to idavernestanfield.com as an iFrame. Due to compatibility issues, Safari users may be unable to use the app. Please view in Chrome v.52+ or Firefox v.48+.
 
-The following truth-table generator allows you to compare how Classical, Lukasiewicz, Gödel, and Kleene logics compute propositional formulas. Simply enter a formula, choose a logic and view the resulting table. Some notes on form: 
+This truth-table generator allows you to compare how Classical, Lukasiewicz, Gödel, and Kleene logics compute propositional formulas. Simply enter a formula, choose a logic and view the resulting table. Some notes on form: 
 
 Any letter on the keyboard, excepting 'v' can be used as a variable. 'V' is reserved as the symbol for disjunction. 
 
