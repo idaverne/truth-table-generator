@@ -24,7 +24,6 @@ $(document).ready(function(){
 		$('#truthtable').empty();
 		$('.tterror').remove();
 		$('.numrows').remove();
-		$('<p class =\'calc\'>Calculating....</p>').insertAfter('.buttons');
 
 		firstVar = undefined;
 		usedVar = [];	
@@ -35,7 +34,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');$('.calc').remove();return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		removeDuplicates(formulaLog);
 		varValuesBinary();
@@ -62,7 +61,7 @@ $(document).ready(function(){
 		$('#truthtable').empty();
 		$('.tterror').remove();
 		$('.numrows').remove();
-		$('<p class =\'calc\'>Calculating....</p>').insertAfter('.buttons');
+		
 
 		firstVar = undefined;
 		usedVar = [];	
@@ -73,7 +72,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');$('.calc').remove();return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		varValuesTernary();
 		assignValues();
@@ -96,7 +95,7 @@ $(document).ready(function(){
 		$('#truthtable').empty();
 		$('.tterror').remove();
 		$('.numrows').remove();
-		$('<p class =\'calc\'>Calculating....</p>').insertAfter('.buttons');
+		
 
 		firstVar = undefined;
 		usedVar = [];	
@@ -107,7 +106,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');$('.calc').remove();return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		varValuesTernary();
 		assignValues();
@@ -130,7 +129,7 @@ $(document).ready(function(){
 		$('#truthtable').empty();
 		$('.tterror').remove();
 		$('.numrows').remove();
-		$('<p class =\'calc\'>Calculating....</p>').insertAfter('.buttons');
+		
 
 		firstVar = undefined;
 		usedVar = [];	
@@ -141,7 +140,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');$('.calc').remove();return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false}
 		varValuesTernary();
 		assignValues();
@@ -632,7 +631,6 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 				currentCol = 'col'+i; console.log('currentCol '+currentCol)
 				$('.'+currentCol).outerWidth($('#headForm'+i).outerWidth())
 			}$('<p class =\'numrows\'> Total Rows: '+ numRows +' &emsp;&emsp; Total columns: '+headerItems.length+'</p>').insertAfter('#truthtable');
-			$('.calc').remove();
  		}
 
 //------------------------------------------------------------------------------
