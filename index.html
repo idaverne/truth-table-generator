@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <link href='site.css' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <main>
+            <form class='ttform'><input class='ttform-input' type='text' id='form-link-input' placeholder='Your formula here' autocomplete="off" style="text-transform:uppercase"/></form>
+            <div class="buttons">
+                <div><button class="ttbtn" id='classical'>Classical</button></div>
+                 <div><button class="ttbtn" id='godel'>Gödel(G3)</button></div>
+                 <div><button class="ttbtn" id='kleene'>Kleene(K3)</button></div>
+                 <div><button class="ttbtn" id='lukasiewicz'>Lukasiewicz(L3)</button></div>
+            </div>
+            <div id='truthtable' style='overflow-x:auto' style='overflow-y:auto'></div>
+        </main>
+
+        <script   src='https://code.jquery.com/jquery-2.2.4.min.js'   integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44='   crossorigin='anonymous'></script>
+        <script src='script.js'></script>
+
+    </body>
+</html> 
