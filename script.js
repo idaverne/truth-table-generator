@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var logic;
 	var fromUser //= $('input').val().toLowerCase();
 	var assertion //= fromUser;
-	var	operators = ['&', 'v', '>','%', '~'];
+	var operators = ['&', 'v', '>','%', '~'];
 	var allowedVar ='qwertyuiopasdfghjklzxcbnm'
 	var firstVar = undefined;	
 	var usedVar = [];
