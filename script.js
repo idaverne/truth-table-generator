@@ -1,4 +1,4 @@
-
+'use strict'
 $(document).ready(function(){
 
 	var logic;
@@ -164,7 +164,7 @@ $(document).ready(function(){
 //------------------------------------------------------------------------------
 
 		function negation(value){
-			
+		let newValue;	
 		if(logic=='godel(G3)'){
 			if(value == 1){
 				newValue = 0;
@@ -223,7 +223,7 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 			negArrays();
 
 			function emptyArrays(){
-				y=startingValues;
+				let y=startingValues;
 				for(let i of usedVar){
 					y[i]=[];
 			}}
@@ -298,7 +298,7 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 			negArrays();
 
 			function emptyArrays(){
-				y=startingValues;
+				let y=startingValues;
 				for(let i of usedVar){
 					y[i]=[];
 			}}
@@ -414,7 +414,7 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 				let primOp;
 				let justOp1 = currentForm.replace(var1, '');
 				let justOp2 = justOp1.replace(var2, '');
-				for(i of justOp2){
+				for(let i of justOp2){
 					if(i.match(/&|v|>|%/)){
 						primOp=i;
 						return primOp;
@@ -561,7 +561,7 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 
 		function opCountFunc(currentForm){
 			let count = 0;
-			for(i of currentForm){
+			for(let i of currentForm){
 					if(i.match(/&|v|>|%/)){count++}
 			}return count;
 		}
@@ -652,10 +652,10 @@ then for ((2^(n-index+1))/4) many times push 0. Check if current length of array
 				}else{
 					
 					find_first_var:{ 
-						for(i in assertion){
-							x = assertion[i].charAt();
+						for(let i in assertion){
+							let x = assertion[i].charAt();
 							for (var j in allowedVar){
-								y = allowedVar[j].charAt();
+								let y = allowedVar[j].charAt();
 								if(y===x){
 									firstVar = i;
 									break find_first_var;
@@ -702,7 +702,7 @@ together they are always equal to the operator count * 2. */
 			let firstPassL = 0; 
 			let firstPassR = 0;
 			let opCount = 0;
-				for(i of assertion){
+				for(let i of assertion){
 					if(i.match(/\(/)){firstPassL++}
 					if(i.match(/\)/)){firstPassR++}
 					if(i.match(/&|v|>|%/)){opCount++}
@@ -792,12 +792,12 @@ if there is one has to be an operator. After this, the next character has to be 
 						return false;
 					}
 				}if($.inArray(z, allowedVar) !== -1){
-					if(x == firstVar+1){
+					/*if(x == firstVar+1){
 							$('<p class =\'tterror\'>Please revise your formula and try again.</p>').insertAfter('#truthtable');
 							console.log('Nope5');
 							return false;
 						
-					}else if($.inArray(w, ')qwertyuiopasdfghjklzxcbnm') !== -1){
+					}*/if($.inArray(w, ')qwertyuiopasdfghjklzxcbnm') !== -1){
 						$('<p class =\'tterror\'>A variable can only be immediately preceded by a negation operator, a left-hand parentheses or a binary operator. Please revise your formula and try again.</p>').insertAfter('.buttons');
 						console.log('Nope6');
 						return false;
@@ -876,7 +876,7 @@ parentheses after this second left one. Slice and add to descendentLog. Loop rec
 							leftIndices.push(a);
 							currentL=a;
 							break;}
-						checkingForOp = assertion[a].charAt();	
+						let checkingForOp = assertion[a].charAt();	
 						
 						if(($.inArray(checkingForOp, '&v>%') !== -1)&& (!x>startY)){a--; currentL=a; console.log(currentL); break}}
 					
@@ -908,4 +908,4 @@ parentheses after this second left one. Slice and add to descendentLog. Loop rec
 				}
 			}
 //----------------------------------------------------------------------------------
-})	
+})
