@@ -34,7 +34,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable). Please revise your formula and try again.</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		removeDuplicates(formulaLog);
 		varValuesBinary();
@@ -72,7 +72,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable). Please revise your formula and try again.</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		varValuesTernary();
 		assignValues();
@@ -106,7 +106,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable). Please revise your formula and try again.</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false};
 		varValuesTernary();
 		assignValues();
@@ -140,7 +140,7 @@ $(document).ready(function(){
 		removeWhiteSpace();
 		removeDoubleNegation();
 		countVar(assertion);
-		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable).</p>').insertAfter('.buttons');return false};
+		if(usedVar.length>6){$('<p class =\'tterror\'>This app accepts a maximum of 6 variables, not counting negations (i.e. (PvD) = 2 variables, while (Pv~P) = 1 variable). Please revise your formula and try again.</p>').insertAfter('.buttons');return false};
 		if(!isWellFormed(assertion)){return false}
 		varValuesTernary();
 		assignValues();
